@@ -677,7 +677,9 @@ class module_form extends module_base {
 			if ( ! isset( $setting['values'] ) ) {
 				$setting['values'] = array( $setting['value'] );
 			}
-			$loop_count = count( $setting['values'] );
+            //Edited By NileYouth
+			$loop_count = is_array($setting['values']) ? count($setting['values']) : 1;
+	        //Edited By NileYouth
 			if ( ! $loop_count ) {
 				$loop_count = 1;
 			}

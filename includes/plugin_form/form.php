@@ -17,7 +17,8 @@ class module_form extends module_base {
 		return parent::can_i( $actions, $name, $category, $module );
 	}
 
-	public $version = 2.277;
+	public $version = 2.278;
+	// 2.277 - 2025-11-04 - php8x compatibility fix
 	// 2.277 - 2021-04-07 - php8 compatibility fix
 	// 2.276 - 2017-06-27 - date format
 	// 2.275 - 2017-06-14 - decimal processing

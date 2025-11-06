@@ -1,6 +1,4 @@
 <?php
-
-
 /**
  * FORM CLASS
  * Version: 2.21
@@ -18,7 +16,7 @@ class module_form extends module_base {
 	}
 
 	public $version = 2.278;
-	// 2.277 - 2025-11-04 - php8x compatibility fix
+	// 2.278 - 2025-11-06 - php8x compatibility fix
 	// 2.277 - 2021-04-07 - php8 compatibility fix
 	// 2.276 - 2017-06-27 - date format
 	// 2.275 - 2017-06-14 - decimal processing
@@ -1615,6 +1613,5 @@ class module_form extends module_base {
 		<?php
 		return ob_get_clean();
 	}
-
 
 }

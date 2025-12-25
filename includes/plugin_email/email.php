@@ -631,7 +631,7 @@ class module_email extends module_base {
 		}
 	}
 
-	public static function hook_website_deleted( $callback_name, $website_id, $remove_linked_data ) {
+	public static function hook_website_deleted( $callback_name, $website_id, $remove_linked_data = false ){
 		if ( (int) $website_id > 0 ) {
 			delete_from_db( 'email', 'website_id', $website_id );
 		}
